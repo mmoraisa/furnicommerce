@@ -1,5 +1,5 @@
 import React from 'react';
-import App, { Container } from 'next/app';
+import App from 'next/app';
 import Page from '../components/Page';
 
 class FurnicommerceApp extends App {
@@ -9,11 +9,9 @@ class FurnicommerceApp extends App {
     const { Component } = this.props;
 
     return (
-      <Container>
-        <Page>
-          <Component />
-        </Page>
-      </Container>
+      <Page>
+        <Component />
+      </Page>
     )
   }
 
